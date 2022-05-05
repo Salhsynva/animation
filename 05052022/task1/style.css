@@ -1,0 +1,29 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.area{
+    width: 500px;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.area .box{
+    width: 60px;
+    height: 7vh;
+    background-color: green;
+    border-radius: 50%;
+    margin: auto;
+    animation-name: boxAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boxAnimation {
+    0% {width: 60px; height: 7vh;}
+    50% {width: 120px; height: 14vh;}
+    100% {width: 60px; height: 7vh} 
+}
